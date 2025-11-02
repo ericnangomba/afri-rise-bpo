@@ -38,10 +38,8 @@ export default function Footer() {
             <ul className="space-y-2">
               {services.map((service) => (
                 <li key={service}>
-                  <Link href="/services">
-                    <a className="text-muted-foreground hover:text-primary transition-colors text-sm" data-testid={`link-service-${service.toLowerCase().replace(/\s+/g, '-')}`}>
-                      {service}
-                    </a>
+                  <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors text-sm" data-testid={`link-service-${service.toLowerCase().replace(/\s+/g, '-')}`}>
+                    {service}
                   </Link>
                 </li>
               ))}
@@ -53,10 +51,8 @@ export default function Footer() {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.path}>
-                  <Link href={link.path}>
-                    <a className="text-muted-foreground hover:text-primary transition-colors text-sm" data-testid={`link-footer-${link.name.toLowerCase().replace(/\s+/g, '-')}`}>
-                      {link.name}
-                    </a>
+                  <Link href={link.path} className="text-muted-foreground hover:text-primary transition-colors text-sm" data-testid={`link-footer-${link.name.toLowerCase().replace(/\s+/g, '-')}`}>
+                    {link.name}
                   </Link>
                 </li>
               ))}

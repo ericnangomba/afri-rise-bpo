@@ -18,25 +18,23 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link href="/">
-            <a className="text-2xl font-bold text-primary hover-elevate active-elevate-2 rounded-md px-2 py-1" data-testid="link-home">
-              Afri-Rise BPO
-            </a>
+          <Link href="/" className="text-2xl font-bold text-primary hover-elevate active-elevate-2 rounded-md px-2 py-1" data-testid="link-home">
+            Afri-Rise BPO
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <Link key={item.path} href={item.path}>
-                <a
-                  className={`text-base font-medium transition-colors hover-elevate active-elevate-2 rounded-md px-3 py-2 ${
-                    location === item.path
-                      ? 'text-primary'
-                      : 'text-foreground'
-                  }`}
-                  data-testid={`link-${item.name.toLowerCase()}`}
-                >
-                  {item.name}
-                </a>
+              <Link
+                key={item.path}
+                href={item.path}
+                className={`text-base font-medium transition-colors hover-elevate active-elevate-2 rounded-md px-3 py-2 ${
+                  location === item.path
+                    ? 'text-primary'
+                    : 'text-foreground'
+                }`}
+                data-testid={`link-${item.name.toLowerCase()}`}
+              >
+                {item.name}
               </Link>
             ))}
             <Link href="/contact">
@@ -64,18 +62,18 @@ export default function Navbar() {
         <div className="md:hidden border-t bg-background">
           <div className="px-4 py-4 space-y-3">
             {navItems.map((item) => (
-              <Link key={item.path} href={item.path}>
-                <a
-                  className={`block text-base font-medium py-2 px-3 rounded-md hover-elevate active-elevate-2 ${
-                    location === item.path
-                      ? 'text-primary bg-primary/10'
-                      : 'text-foreground'
-                  }`}
-                  onClick={() => setMobileMenuOpen(false)}
-                  data-testid={`link-mobile-${item.name.toLowerCase()}`}
-                >
-                  {item.name}
-                </a>
+              <Link
+                key={item.path}
+                href={item.path}
+                className={`block text-base font-medium py-2 px-3 rounded-md hover-elevate active-elevate-2 ${
+                  location === item.path
+                    ? 'text-primary bg-primary/10'
+                    : 'text-foreground'
+                }`}
+                onClick={() => setMobileMenuOpen(false)}
+                data-testid={`link-mobile-${item.name.toLowerCase()}`}
+              >
+                {item.name}
               </Link>
             ))}
             <Link href="/contact">
