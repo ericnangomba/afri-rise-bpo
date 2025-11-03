@@ -96,6 +96,9 @@ export default function Footer() {
           <p className="text-sm text-muted-foreground" data-testid="text-copyright">
             © {currentYear} Afri-Rise BPO. All rights reserved.
           </p>
+          <p className="text-sm text-muted-foreground mt-2" data-testid="text-developed-by">
+            Developed by Jertine Tech | Eric Nangomba  | +27 79 856 7196
+          </p>
         </div>
       </div>
     </footer>
