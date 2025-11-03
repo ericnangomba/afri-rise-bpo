@@ -1,0 +1,12 @@
+# This file configures the build and deployment settings for Netlify.
+
+[build]
+  # This command will be run to build your site.
+  command = "npm run build"
+  # This is the directory that contains the built site.
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
