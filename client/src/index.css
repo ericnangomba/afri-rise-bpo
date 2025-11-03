@@ -49,25 +49,24 @@
   --popover-foreground: 210 6% 18%;
 
   --popover-border: 210 6% 84%;
-
-  --primary: 203 89% 42%;
-
+  
+  /* Your main color: #203561 */
+  --primary: 218 50% 25%;
   --primary-foreground: 203 89% 98%;
-
-  --secondary: 210 8% 86%;
-
-  --secondary-foreground: 210 6% 20%;
+  
+  /* Your accent color: #e35721 */
+  --secondary: 17 78% 51%;
+  --secondary-foreground: 0 0% 100%; /* White */
 
   --muted: 210 10% 90%;
 
   --muted-foreground: 210 6% 35%;
-
-  --accent: 210 12% 88%;
-
-  --accent-foreground: 210 6% 22%;
+  
+  /* Your accent color: #e35721 */
+  --accent: 17 78% 51%;
+  --accent-foreground: 0 0% 100%; /* White */
 
   --destructive: 0 84% 45%;
-
   --destructive-foreground: 0 84% 98%;
 
   --input: 210 8% 76%;
