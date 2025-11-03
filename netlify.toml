@@ -4,7 +4,8 @@
   # This command will be run to build your site.
   command = "npm run build"
   # This is the directory that contains the built site.
-  publish = "dist"
+  # Vite is configured to output into dist/public, so publish that folder.
+  publish = "dist/public"
   # This is the directory for serverless functions.
   functions = "netlify/functions"
 
