@@ -8,6 +8,10 @@
   # This is the directory for serverless functions.
   functions = "netlify/functions"
 
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["lightningcss", "@babel/preset-typescript"]
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
